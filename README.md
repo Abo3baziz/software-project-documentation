@@ -1,5 +1,7 @@
 # 📋 Software Project Documentation Skill
 
+[![skills.sh](https://skills.sh/b/Abo3baziz/software-project-documentation)](https://skills.sh/Abo3baziz/software-project-documentation)
+
 An [Agent Skill](https://code.claude.com/docs/en/skills) for discovering, analyzing, estimating, and documenting software products and client projects. 🚀
 
 The skill acts as a product discovery partner, business analyst, and technical documentation assistant. It guides you from an early-stage idea or client brief to a clear, testable, internally consistent documentation set — without inventing facts along the way.
@@ -24,9 +26,23 @@ Working with you, one question at a time, the skill can build and maintain:
 
 ## 📥 Installation
 
+### ⚡ Quick install (recommended)
+
+The easiest way — works with Claude Code, Cursor, Codex, OpenCode, and [75+ other agents](https://github.com/vercel-labs/skills/blob/main/docs/agents.md):
+
+```sh
+npx skills add Abo3baziz/software-project-documentation
+```
+
+The CLI detects your installed agents and lets you pick where to install. Add `-g` to install globally across all your projects, or `--skill software-project-documentation -a claude-code` to skip the prompts.
+
+> 💡 You can also preview a skill without installing anything: `npx skills use Abo3baziz/software-project-documentation@software-project-documentation`
+
+### 🔧 Manual install
+
 The skill is a folder containing `SKILL.md` plus reference templates. Pick the location matching your agent and scope — personal (all your projects) 🌐 or project-level (shared with the team) 🤝.
 
-### 🤖 Claude Code
+#### 🤖 Claude Code
 
 ```sh
 # 👤 Personal (all your projects)
@@ -36,7 +52,7 @@ git clone https://github.com/Abo3baziz/software-project-documentation.git ~/.cla
 git clone https://github.com/Abo3baziz/software-project-documentation.git .claude/skills/software-project-documentation
 ```
 
-### ⌨️ OpenCode
+#### ⌨️ OpenCode
 
 ```sh
 # 🌐 Global
@@ -46,7 +62,7 @@ git clone https://github.com/Abo3baziz/software-project-documentation.git ~/.con
 git clone https://github.com/Abo3baziz/software-project-documentation.git .opencode/skills/software-project-documentation
 ```
 
-### 🖱️ Cursor
+#### 🖱️ Cursor
 
 ```sh
 # 👤 User-level
@@ -56,7 +72,7 @@ git clone https://github.com/Abo3baziz/software-project-documentation.git ~/.cur
 git clone https://github.com/Abo3baziz/software-project-documentation.git .cursor/skills/software-project-documentation
 ```
 
-### 🔗 Other agents
+#### 🔗 Other agents
 
 Many agents (including OpenAI Codex, Cursor, and OpenCode) also read the shared `.agents/skills/` convention, which keeps one copy working across several tools:
 
@@ -71,6 +87,12 @@ If your agent uses a different skills directory, clone (or copy) the folder ther
 Start a new agent session in any project and ask something like *"What are your available skills?"* — `software-project-documentation` should be listed. In OpenCode you can also load it directly by mentioning `@software-project-documentation` in your prompt.
 
 ### 🔄 Update
+
+If you installed with `npx skills`, just run:
+
+```sh
+npx skills update
+```
 
 Since the skill is a git clone, updating is just:
 
